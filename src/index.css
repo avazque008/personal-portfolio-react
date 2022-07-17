@@ -1,0 +1,88 @@
+body {
+  background-color: aliceblue;
+}
+
+.header {
+  background-image: linear-gradient(to right, rgb(22, 96, 132), rgb(23, 112, 149),
+      rgb(28, 143, 186), rgb(31, 165, 214), rgb(28, 143, 186), rgb(23, 112, 149), rgb(22, 96, 132));
+  padding: 25px;
+}
+
+.row {
+  margin: 0;
+  padding: 10px;
+}
+
+.nav li {
+  list-style: none;
+  text-align: center;
+}
+
+.nav span {
+  padding: 15px 25px;
+  background-color: #C9DEE4;
+  border-radius: 15px;
+  color: #177095;
+  font-weight: 600;
+}
+
+.left {
+  box-shadow: -8px -6px 1px #A9C5E0;
+}
+
+.right {
+  box-shadow: 8px -6px 1px #A9C5E0;
+}
+
+.title {
+  text-align: center;
+  margin: 20px;
+}
+
+.title h1 {
+  background-color:#C9DEE4;
+  width: 50%;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 10px 10px 2px #A9C5E0;
+  color: #177095;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.hero {
+  background-image: url('./assets/images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+  opacity: 0.9;
+}
+
+.about {
+  background-color: #177095;
+  border-radius: 10px;
+  color: aliceblue;
+}
+
+.about-me {
+  padding: 20px;
+  margin: 15px 10px;
+  text-align: center;
+}
+
+.about-me h2 {
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.info {
+  margin: 10px 0;
+  padding: 18px 0px;
+}
+
+.avatar {
+  width: 130px;
+  height: 130px;
+  margin: 20px 0px;
+  border-radius: 5px;
+}
