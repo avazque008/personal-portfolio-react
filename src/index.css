@@ -32,7 +32,7 @@ body {
   background-color: white;
   color: #177095;
   font-weight: 600;
-  border:6px solid #C9DEE4;
+  border:3px solid #177095;
 
 }
 
@@ -59,13 +59,13 @@ body {
   opacity: 0.9;
 }
 
-.about {
+.about, .contact-section {
   background-color: #C9DEE4;
   border-radius: 10px;
   color: #177095;
 }
 
-.about-me {
+.about-me, .contact-form-div {
   padding: 20px;
   margin: 15px 10px;
   text-align: center;
@@ -102,4 +102,48 @@ body {
   font-size: 40px;
   color: white;
   margin: 10px 20px;
+}
+
+.contact-form-div h2 {
+  text-decoration: underline;
+  margin-bottom: 35px;    
+}
+
+.contact-form {
+  justify-content: center;
+
+}
+
+.contact-form div {
+  margin: 10px;
+}
+
+.contact-form label {
+  margin: 8px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.contact-form textarea {
+  min-height: 100px;
+  min-width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+
+}
+
+.contact-form input {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+}
+
+.contact-btn {
+  border-radius: 5px;
+  background-color: #177095;
+  color: #C9DEE4;
+  padding: 10px;
+  width: 35%;
+  border: none;
 }

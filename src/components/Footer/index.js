@@ -5,13 +5,13 @@ function Footer() {
         <div>
             <footer className="footer">
                 <a href="https://github.com/avazque008" target="_blank" >
-                    <i class="fa-brands fa-github"></i>
+                    <i className="fa-brands fa-github"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/alex-vazquez-12596422b/?original_referer=" target="_blank" >
-                    <i class="fa-brands fa-linkedin"></i>
+                    <i className="fa-brands fa-linkedin"></i>
                 </a>
                 <a href="https://stackoverflow.com/users/17968663/alex-vazquez" target="_blank">
-                    <i class="fa-brands fa-stack-overflow"></i>
+                    <i className="fa-brands fa-stack-overflow"></i>
                 </a>
             </footer>
         </div>
