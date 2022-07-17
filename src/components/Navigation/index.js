@@ -4,10 +4,10 @@ function Navigation() {
     return (
         <div className="header container-fluid">
             <ul className="row nav">
-                <li className="col-6 col-md-3">
+                <li className="col-12 col-md-3">
                     <span className="left">About Me</span>
                 </li>
-                <li className="col-6 col-md-3">
+                <li className="col-12 col-md-3">
                     <span className="left">Portfolio</span>
                 </li>
                 <li className="col-12 col-md-3">
