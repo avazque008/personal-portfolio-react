@@ -1,8 +1,7 @@
 body {
   background-color: aliceblue;
   font-family: 'Poppins', sans-serif;
-  background-image: linear-gradient(to right, rgb(22, 96, 132), rgb(23, 112, 149),
-  rgb(28, 143, 186), rgb(31, 165, 214), rgb(28, 143, 186), rgb(23, 112, 149), rgb(22, 96, 132));
+  background-image: linear-gradient(to right, rgb(23, 112, 149),rgb(28, 143, 186), rgb(31, 165, 214), rgb(28, 143, 186), rgb(23, 112, 149));
 }
 
 .header {
@@ -19,20 +18,22 @@ body {
   text-align: center;
 }
 
-.nav span {
+.category {
   padding: 15px 25px;
   background-color: #C9DEE4;
   border-radius: 15px;
   color: #177095;
+  font-weight: 300;
+}
+
+.category-selected {
+  padding: 15px 25px;
+  border-radius: 15px;
+  background-color: white;
+  color: #177095;
   font-weight: 600;
-}
+  border:6px solid #C9DEE4;
 
-.left {
-  box-shadow: -8px -6px 1px #A9C5E0;
-}
-
-.right {
-  box-shadow: 8px -6px 1px #A9C5E0;
 }
 
 .title {
