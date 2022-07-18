@@ -49,12 +49,12 @@ function Projects() {
                     <div className="col-12 col-md-6 project">
                         <h3 className="project-name">
                             {project.name}
-                            <a href={project.github} target="_blank" >
+                            <a href={project.github} target="_blank" rel="noreferrer">
                                 <i className="fa-brands fa-github"></i>
                             </a>
                         </h3>
-                        <a href={project.deploy} target="_blank">
-                            <img className='project-img' src={project.image} alt={`An image of a deployed web application titled ${project.name}.`} />
+                        <a href={project.deploy} target="_blank" rel="noreferrer">
+                            <img className='project-img' src={project.image} alt={`A deployed web application titled ${project.name}.`} />
                         </a>
                     </div>
                 ))}

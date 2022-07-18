@@ -11,8 +11,8 @@ function ContactForm() {
 
     function handleChange(e) {
         if (e.target.name === 'email') {
-
             const isValid = validateEmail(e.target.value);
+            // isValid conditional statement
             if (!isValid) {
                 setErrorMessage('Your email is invalid.');
             } else {
@@ -31,7 +31,6 @@ function ContactForm() {
         }
     }
 
-
     function handleSubmit(e) {
         e.preventDefault();
         console.log(formState);
@@ -43,17 +42,19 @@ function ContactForm() {
                 <h2>Contact me</h2>
                 <form id="contact-form" className='contact-form row' onSubmit={handleSubmit} >
                     <div className='col-12'>
-                        <label htmlFor="name">Name:</label>
-                        <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
-                    </div>
-                    <div className='col-12'>
-                        <label htmlFor="email">Email address:</label>
-                        <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
-                    </div>
-                    <div className='col-12'>
-                        <label htmlFor="message">Message:</label>
-                        <br />
-                        <textarea name="message" rows="4" defaultValue={message} onBlur={handleChange} />
+                        <div>
+                            <label htmlFor="name">Name:</label>
+                            <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+                        </div>
+                        <div>
+                            <label htmlFor="email">Email address:</label>
+                            <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+                        </div>
+                        <div>
+                            <label htmlFor="message">Message:</label>
+                            <br />
+                            <textarea name="message" rows="4" defaultValue={message} onBlur={handleChange} />
+                        </div>
                     </div>
                     {errorMessage && (
                         <div className='col-12'>
@@ -61,6 +62,25 @@ function ContactForm() {
                         </div>
                     )}
                     <button className='contact-btn' type="submit">Submit</button>
+                    <div className='col-12 personal-info'>
+                        <h4>Personal Information</h4>
+                        <div>
+                            <h5>
+                                Email Address
+                            </h5>
+                            <p>
+                                <a href="mailto:avazque008@outlook.com">avazque008@outlook.com</a>
+                            </p>
+                        </div>
+                        <div>
+                            <h5>
+                                Phone Number
+                            </h5>
+                            <p>
+                                556.789.6723
+                            </p>
+                        </div>
+                    </div>
                 </form>
             </div>
         </section>

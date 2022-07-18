@@ -109,7 +109,7 @@ body {
 
 .contact-form-div h2 {
   text-decoration: underline;
-  margin-bottom: 35px;
+  margin-bottom: 10px;
 }
 
 .contact-form {
@@ -118,7 +118,7 @@ body {
 }
 
 .contact-form div {
-  margin: 10px;
+  margin: 18px 0;
 }
 
 .contact-form label {
@@ -149,6 +149,19 @@ body {
   padding: 10px;
   width: 35%;
   border: none;
+  margin-bottom: 20px;
+}
+
+.personal-info {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #177095;
+  border-radius: 5px;
+}
+
+.personal-info h4 {
+  margin: 20px 0;
+  text-decoration: underline;
 }
 
 /* Projects Styling */
