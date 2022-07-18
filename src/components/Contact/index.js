@@ -39,7 +39,7 @@ function ContactForm() {
     return (
         <section className="container contact-section">
             <div className='contact-form-div'>
-                <h2>Contact me</h2>
+                <h2>Contact Me</h2>
                 <form id="contact-form" className='contact-form row' onSubmit={handleSubmit} >
                     <div className='col-12'>
                         <div>

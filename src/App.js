@@ -4,6 +4,7 @@ import About from './components/About-Me';
 import Footer from './components/Footer';
 import ContactForm from './components/Contact';
 import Projects from './components/Project';
+import Resume from './components/Resume';
 
 function App() {
   const [categorySelected, setCategorySelected] = useState('me');
@@ -14,7 +15,8 @@ function App() {
       <Header setCategorySelected={setCategorySelected} categorySelected={categorySelected} />
       {categorySelected === 'me' && <About />}
       {categorySelected === 'contact' && <ContactForm />}
-      {categorySelected === 'portfolio' && <Projects />}            
+      {categorySelected === 'portfolio' && <Projects />}
+      {categorySelected === 'resume' && <Resume />}                        
       <Footer />
     </div>
   );

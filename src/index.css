@@ -8,11 +8,6 @@ body {
   padding: 25px;
 }
 
-.row {
-  margin: 0;
-  padding: 10px;
-}
-
 .nav li {
   list-style: none;
   text-align: center;
@@ -40,7 +35,7 @@ body {
   text-align: center;
 }
 
-.title h1 {
+.author {
   font-size: 25px;
   background-color: #C9DEE4;
   width: 50%;
@@ -61,16 +56,17 @@ body {
 
 .about,
 .contact-section,
-.projects {
+.projects,
+.resume {
   background-color: #C9DEE4;
-  border-radius: 10px;
+  border-radius: 2px;
   color: #177095;
 }
 
 .about-me,
 .contact-form-div {
   padding: 20px;
-  margin: 15px 10px;
+  margin: 15px 0px;
   text-align: center;
 }
 
@@ -122,7 +118,7 @@ body {
 }
 
 .contact-form label {
-  margin: 8px;
+  margin: 8px 0px;
   text-align: center;
   font-weight: 600;
 }
@@ -188,6 +184,11 @@ body {
   padding: 20px;
 }
 
+.project-info h2 {
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
 .project-img {
   border-radius: 5px;
   max-width: 100%;
@@ -196,4 +197,60 @@ body {
 
 .project-img:hover {
   transform: scale(1.05);
+}
+
+/* Resume Styling*/
+
+.resume {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.resume ul {
+  display: inline-block;
+  text-align: left;
+}
+
+.resume h2 {
+  margin: 25px 0;
+  text-decoration: underline;
+}
+
+.resume li {
+  padding: 5px;
+}
+
+.resume div {
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 780px) {
+
+  .author {
+    box-shadow: none;
+  }
+
+  .about,
+  .contact-section,
+  .projects,
+  .resume {
+    border-radius: 0px;
+  }
+  .section {
+    margin: 15px 0;
+  }
+
+  .category {
+    padding: 5px 15px;
+    border-radius: 5px;
+  }
+  
+  .category-selected {
+    padding: 5px 15px;
+    border-radius: 5px;  
+  }
+
+  .header {
+    padding: 5px;
+  }
 }

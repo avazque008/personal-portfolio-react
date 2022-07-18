@@ -45,6 +45,7 @@ function Projects() {
     return (
         <div className="container projects">
             <div className="row project-info">
+                <h2 className="col-12">Projects</h2>
                 {projects.map((project) => (
                     <div className="col-12 col-md-6 project">
                         <h3 className="project-name">
