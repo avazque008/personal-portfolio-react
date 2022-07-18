@@ -1,8 +1,8 @@
-# Portfolio Web Application [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Portfolio [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-A web application that allows users to sign up or log in to create posts, write comments and update their existing posts. All posts created by all users will be displayed in a home page where anyone who visits the website can see them. This web application utilizes a database as well as other npm modules.
+A web application build with React.js, that showcase my work as a full-web developer.
 
 #### Built With
 * HTML
