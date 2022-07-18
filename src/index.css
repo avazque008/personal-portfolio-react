@@ -1,7 +1,7 @@
 body {
   background-color: aliceblue;
   font-family: 'Poppins', sans-serif;
-  background-image: linear-gradient(to right, rgb(23, 112, 149),rgb(28, 143, 186), rgb(31, 165, 214), rgb(28, 143, 186), rgb(23, 112, 149));
+  background-image: linear-gradient(to right, rgb(23, 112, 149), rgb(28, 143, 186), rgb(31, 165, 214), rgb(28, 143, 186), rgb(23, 112, 149));
 }
 
 .header {
@@ -32,7 +32,7 @@ body {
   background-color: white;
   color: #177095;
   font-weight: 600;
-  border:3px solid #177095;
+  border: 3px solid #177095;
 
 }
 
@@ -59,13 +59,16 @@ body {
   opacity: 0.9;
 }
 
-.about, .contact-section {
+.about,
+.contact-section,
+.projects {
   background-color: #C9DEE4;
   border-radius: 10px;
   color: #177095;
 }
 
-.about-me, .contact-form-div {
+.about-me,
+.contact-form-div {
   padding: 20px;
   margin: 15px 10px;
   text-align: center;
@@ -106,7 +109,7 @@ body {
 
 .contact-form-div h2 {
   text-decoration: underline;
-  margin-bottom: 35px;    
+  margin-bottom: 35px;
 }
 
 .contact-form {
@@ -146,4 +149,38 @@ body {
   padding: 10px;
   width: 35%;
   border: none;
+}
+
+/* Projects Styling */
+
+.projects {
+  margin-top: 15px;
+}
+
+.project {
+  margin: 25px 0;
+}
+
+.project-name {
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.project-name a {
+  padding: 15px;
+}
+
+.project-info {
+  text-align: center;
+  padding: 20px;
+}
+
+.project-img {
+  border-radius: 5px;
+  max-width: 100%;
+  max-height: 300px;
+}
+
+.project-img:hover {
+  transform: scale(1.05);
 }
