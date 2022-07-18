@@ -24,7 +24,7 @@ function Resume() {
                     <h4>Back-End Proficiencies</h4>
                     <ul>
                         {backProficiencies.map((proficiency) => (
-                            <li>
+                            <li key={proficiency}>
                                 {proficiency}
                             </li>
                         ))}

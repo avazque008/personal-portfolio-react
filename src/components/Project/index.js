@@ -47,7 +47,7 @@ function Projects() {
             <div className="row project-info">
                 <h2 className="col-12">Projects</h2>
                 {projects.map((project) => (
-                    <div className="col-12 col-md-6 project">
+                    <div key={project.name} className="col-12 col-md-6 project">
                         <h3 className="project-name">
                             {project.name}
                             <a href={project.github} target="_blank" rel="noreferrer">
