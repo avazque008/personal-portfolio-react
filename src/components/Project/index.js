@@ -4,10 +4,10 @@ function Projects() {
 
     const [projects] = useState([
         {
-            name: 'Run Buddy',
-            image: require('../../assets/images/run-buddy.PNG'),
-            github: 'https://github.com/avazque008/run-buddy',
-            deploy: 'https://avazque008.github.io/run-buddy/'
+            name: 'Book and a Coffee',
+            image: require('../../assets/images/bookandacoffee.PNG'),
+            github: 'https://github.com/avazque008/bookandacoffee',
+            deploy: 'https://www.bookandacoffee.com/'
         },
         {
             name: 'Yakety',
@@ -38,6 +38,12 @@ function Projects() {
             image: require('../../assets/images/work-day-scheduler.PNG'),
             github: 'https://github.com/avazque008/work-day-scheduler',
             deploy: 'https://avazque008.github.io/work-day-scheduler/'
+        },
+        {
+            name: 'Run Buddy',
+            image: require('../../assets/images/run-buddy.PNG'),
+            github: 'https://github.com/avazque008/run-buddy',
+            deploy: 'https://avazque008.github.io/run-buddy/'
         },
 
     ]);
