@@ -1,7 +1,7 @@
 {
   "name": "personal-portfolio-react",
   "version": "1.0.0",
-  "description": "",
+  "description": "Portfolio",
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
