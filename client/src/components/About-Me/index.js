@@ -9,28 +9,14 @@ function About() {
                 <div className="info">
                     <img src={avatar} alt="Alex's Avatar" className="avatar" />
                     <div className="col-12">
-                        <p>Pellentesque habitant morbi tristique senectus et netus et
-                            malesuada fames ac turpis egestas. Vestibulum tortor quam,
-                            feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu
-                            libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
-                            Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper
-                            pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare
-                            sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros
-                            ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in
-                            turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus
-                            faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.
-                            Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
-                            facilisis luctus, metus
-                        </p>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et
-                            malesuada fames ac turpis egestas. Vestibulum tortor quam,
-                            feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu
-                            libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
-                            Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper
-                            pharetra. Praesent dapibus, neque id cursus
-                            faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.
-                            Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
-                            facilisis luctus, metus
+                        <p>
+                            Full-stack web developer striving to maximize the user experience on the web. 
+                            With a certificate in Full Stack Web Development from Columbia University and proficiency in JavaScript, CSS3, Node.js, React.js, web programming frameworks, and responsive web design. 
+                            Recognized as an ingenious problem solver, an adaptable and devoted developer whose priority is its audience user experience. 
+                            With a natural curiosity, I seek to continuously learn new techniques and tools to develop an efficacious user experience. 
+                            Recently with a priority on mobile-first design, a team of five, including me, effectively developed a single-page MERN app utilizing an impactful UX and UI design.
+                            A weblog where book enthusiasts can share their thoughts concerning a book they have read and keep track of books they plan to read or have already read.
+                            I'm eager to leverage my skills as part of a fast-paced, quality-driven team to produce a more enjoyable user experience on the web.
                         </p>
                     </div>
                 </div>
