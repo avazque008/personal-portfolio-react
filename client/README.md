@@ -4,6 +4,8 @@
 
 A web application build with React.js, that showcase my work as a full-web developer.
 
+![Website](https://github.com/avazque008/personal-portfolio-react/blob/main/src/assets/images/website.PNG)
+
 #### Built With
 * HTML
 * CSS

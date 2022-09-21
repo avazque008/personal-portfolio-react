@@ -1,10 +1,11 @@
 {
   "name": "personal-portfolio-react",
   "version": "1.0.0",
-  "description": "## Description",
+  "description": "",
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
+    "install": "cd server && npm i && cd ../client && npm i",
     "build": "cd client && npm run build"
   },
   "repository": {
@@ -12,7 +13,7 @@
     "url": "git+https://github.com/avazque008/personal-portfolio-react.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Alex Vazquez",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/avazque008/personal-portfolio-react/issues"
