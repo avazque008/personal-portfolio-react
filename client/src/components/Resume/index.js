@@ -9,7 +9,7 @@ function Resume() {
         <div className="container">
             <div className="row resume">
                 <h2 className="col-12">Resume</h2>
-                <h6 className="col-12"><a href={require('../../assets/resume/av-resume.pdf')} download>Download Resume</a></h6>
+                <h6 className="col-12"><a href={require('../../assets/resume/Resume.pdf')} download>Download Resume</a></h6>
                 <div className="col-12">
                     <h4>Front-End Proficiencies</h4>
                     <ul>

@@ -1,7 +1,31 @@
+@keyframes backgroundColorPalette {
+  0% {
+    background: #228EC5;
+  }
+
+  25% {
+    background: #309CC5;
+  }
+
+  50% {
+    background: #3DA9C5;
+  }
+
+  75% {
+    background: #64BDCF;
+  }
+
+  100% {
+    background: #78C5D5;
+  }
+}
+
 body {
-  background-color: aliceblue;
   font-family: 'Poppins', sans-serif;
-  background-image: linear-gradient(to right, rgb(23, 112, 149), rgb(28, 143, 186), rgb(31, 165, 214), rgb(28, 143, 186), rgb(23, 112, 149));
+  animation-name: backgroundColorPalette;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .header {
@@ -15,10 +39,18 @@ body {
 
 .category {
   padding: 15px 25px;
+  transition: all 0.5s ease-in-out;
   background-color: #C9DEE4;
   border-radius: 15px;
   color: #177095;
   font-weight: 300;
+}
+
+.category:hover {
+  background-color: white;
+  padding: 15px 35px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .category-selected {
@@ -28,7 +60,6 @@ body {
   color: #177095;
   font-weight: 600;
   border: 3px solid #177095;
-
 }
 
 .title {
@@ -193,6 +224,7 @@ body {
   border-radius: 5px;
   max-width: 100%;
   max-height: 300px;
+  transition: all 0.5s ease-in-out;
 }
 
 .project-img:hover {
@@ -236,6 +268,7 @@ body {
   .resume {
     border-radius: 0px;
   }
+
   .section {
     margin: 15px 0;
   }
@@ -244,10 +277,10 @@ body {
     padding: 5px 15px;
     border-radius: 5px;
   }
-  
+
   .category-selected {
     padding: 5px 15px;
-    border-radius: 5px;  
+    border-radius: 5px;
   }
 
   .header {
