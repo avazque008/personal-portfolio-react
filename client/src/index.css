@@ -181,16 +181,21 @@ body {
 
 .project {
   margin: 25px 20px;
-  border: 1px solid #177095;
+  background-color: #a5c3df;
   border-radius: 15px;
 }
 
 .project-name {
   color: #177095;
   border-radius: 5px;
-  padding: 20px 20px 0 20px;
+  padding: 20px 20px 10px 20px;
   background-color: aliceblue;
   text-decoration: underline;
+  margin-top: 10px;
+}
+
+.project-name i {
+  color: #177095;
 }
 
 .project-name a {
@@ -199,13 +204,15 @@ body {
 
 .project-img-section {
   padding: 25px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .project-img {
   border-radius: 5px;
   max-width: 100%;
   max-height: 400px;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .project-img:hover {
@@ -227,6 +234,10 @@ body {
   top: 8.5px;
   right: 8.5px;
   background-image: url("./assets/images/close-icon.webp");
+}
+
+.project-description {
+  padding: 10px;
 }
 
 /*  Modal End & Project End */
