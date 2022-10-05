@@ -140,6 +140,7 @@ body {
   padding: 20px;
   margin: 0px 10px;
   text-align: center;
+  justify-content: space-evenly;
 }
 
 .avatar {
@@ -177,30 +178,17 @@ body {
 /* Projects Styling */
 
 .project {
-  margin: 25px 0;
+  margin: 25px 20px;
+  border: 1px solid #177095;
+  border-radius: 15px;
 }
 
 .project-name {
   color: #177095;
   border-radius: 5px;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   background-color: aliceblue;
-  margin-bottom: 20px;
   text-decoration: underline;
-}
-
-/* Modal Start */
-
-.modal {
-  background-color: aliceblue;
-  color: #177095;
-}
-
-/*  Modal End  */
-
-.modal a.close-modal {
-  top: 8.5px;
-  right: 8.5px;
 }
 
 .project-name a {
@@ -222,7 +210,24 @@ body {
   transform: scale(1.05);
 }
 
-/* Project End */
+/* Modal Start */
+
+.modal {
+  background-color: aliceblue;
+  font-size: 20px;
+}
+
+.modal a {
+  color: #177095;
+}
+
+.modal a.close-modal {
+  top: 8.5px;
+  right: 8.5px;
+  background-image: url("./assets/images/close-icon.webp");
+}
+
+/*  Modal End & Project End */
 
 /* Contact Start*/
 
@@ -341,12 +346,7 @@ body {
   }
 
   .section {
-    margin: 15px 0;
-  }
-
-  .category {
-    padding: 5px 15px;
-    border-radius: 5px;
+    margin: 10px 0;
   }
 
   .category-selected {
@@ -357,10 +357,5 @@ body {
   .header {
     padding: 5px;
   }
-
-  .about-title h2 {
-    width: 80%;
-  }
-
 
 }
