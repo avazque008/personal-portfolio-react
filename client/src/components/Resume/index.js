@@ -6,7 +6,7 @@ function Resume() {
     const [backProficiencies] = useState(['Node.js', 'Object-Oriented Programming (OOP)', 'Express.js', 'SQL', 'Object-Relational Mapping (ORM)', 'NoSQL', 'Progressive Web Applications (PWA)', 'React.js', 'MERN'])
     
     return (
-        <div className="container">
+        <div className="resume-container">
             <div className="row resume">
                 <h2 className="col-12">Resume</h2>
                 <h6 className="col-12"><a href={require('../../assets/resume/Resume.pdf')} download>Download Resume</a></h6>

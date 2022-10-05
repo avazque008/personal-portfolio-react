@@ -43,9 +43,11 @@ function Projects() {
     ]);
 
     return (
-        <div className="container projects">
+        <div className="projects">
             <div className="row project-info">
-                <h2 className="col-12">Projects</h2>
+                <div className=" col-12 projects-title">
+                    <h2>Projects</h2>
+                </div>
                 {projects.map((project) => (
                     <div key={project.name} className="col-12 col-md-6 project">
                         <h3 className="project-name">
@@ -54,9 +56,14 @@ function Projects() {
                                 <i className="fa-brands fa-github"></i>
                             </a>
                         </h3>
-                        <a href={project.deploy} target="_blank" rel="noreferrer">
-                            <img className='project-img' src={project.image} alt={`A deployed web application titled ${project.name}.`} />
+                        <a target="_blank" rel="noreferrer modal:open" style={{ textDecoration: 'none' }} href="#project-modal">
+                            <div className="project-img-section">
+                                <img className="project-img" src={project.image} alt={`A deployed web application titled ${project.name}.`} />
+                            </div>
                         </a>
+                        <div id="project-modal" class="modal">
+                            <a href={project.deploy} target="_blank" rel="noreferrer" >Visit Website!</a>
+                        </div>
                     </div>
                 ))}
             </div>

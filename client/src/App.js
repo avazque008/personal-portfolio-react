@@ -16,7 +16,7 @@ function App() {
       {categorySelected === 'me' && <About />}
       {categorySelected === 'contact' && <ContactForm />}
       {categorySelected === 'portfolio' && <Projects />}
-      {categorySelected === 'resume' && <Resume />}                        
+      {categorySelected === 'resume' && <Resume />}
       <Footer />
     </div>
   );

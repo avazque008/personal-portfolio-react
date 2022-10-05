@@ -1,14 +1,15 @@
 import React from "react";
-import avatar from '../../assets/images/avatar.png'
 
 function About() {
     return (
-        <div className="container about">
+        <div className="about">
             <div className="row about-me">
-                <h2 className="col-12">About Me</h2>
-                <div className="info">
-                    <img src={avatar} alt="Alex's Avatar" className="avatar" />
-                    <div className="col-12">
+                <div className="about-title col-12">
+                    <h2>About Me</h2>
+                    <img className="avatar" src={require('../../assets/images/profile-picture.png')} alt='Alex Vazquez Profile' />
+                </div>
+                <div className="info col-12">
+                    <div>
                         <p>
                             Full-stack web developer striving to maximize the user experience on the web.
                             With a certificate in Full Stack Web Development from Columbia University and proficiency in JavaScript, CSS3, Node.js, React.js, web programming frameworks, and responsive web design.
