@@ -14,13 +14,13 @@ function ContactForm() {
             const isValid = validateEmail(e.target.value);
             // isValid conditional statement
             if (!isValid) {
-                setErrorMessage('Your email is invalid.');
+                setErrorMessage('Your Email Is Invalid.');
             } else {
                 setErrorMessage('');
             }
         } else {
             if (!e.target.value.length) {
-                setErrorMessage(`${capitalizeFirstLetter(e.target.name)} is required.`);
+                setErrorMessage(`${capitalizeFirstLetter(e.target.name)} Is Required.`);
             } else {
                 setErrorMessage('');
             }
@@ -40,14 +40,41 @@ function ContactForm() {
         <section className="contact-section">
             <div className='contact-form-div'>
                 <h2>Contact Me</h2>
-                <form id="contact-form" className='contact-form row' onSubmit={handleSubmit} >
-                    <div className='col-12'>
+                <form id="contact-form" className='row' onSubmit={handleSubmit} >
+                    <div className='col-12 col-md-6 personal-info'>
+                        <h4>Personal Information</h4>
+                        <div>
+                            <h5 style={{ fontWeight: 'bold' }}>
+                                Email Address
+                            </h5>
+                            <p>
+                                <a href="mailto:avazque008@outlook.com" style={{ textDecoration: 'none' }}>avazque008@outlook.com</a>
+                            </p>
+                        </div>
+                        <div>
+                            <h5 style={{ fontWeight: 'bold' }}>
+                                Phone Number
+                            </h5>
+                            <p>
+                                929.471.8919
+                            </p>
+                        </div>
+                        <div>
+                            <h5 style={{ fontWeight: 'bold' }}>
+                                Resume
+                            </h5>
+                            <a href={require('../../assets/resume/Resume.pdf')} download>
+                                Download Resume
+                            </a>
+                        </div>
+                    </div>
+                    <div className='col-12 col-md-6 contact-form '>
                         <div>
                             <label htmlFor="name">Name:</label>
                             <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
                         </div>
                         <div>
-                            <label htmlFor="email">Email address:</label>
+                            <label htmlFor="email">Email Address:</label>
                             <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
                         </div>
                         <div>
@@ -55,31 +82,12 @@ function ContactForm() {
                             <br />
                             <textarea name="message" rows="4" defaultValue={message} onBlur={handleChange} />
                         </div>
-                    </div>
-                    {errorMessage && (
-                        <div className='col-12'>
-                            <p className="error-text">{errorMessage}</p>
-                        </div>
-                    )}
-                    <button className='contact-btn' type="submit">Submit</button>
-                    <div className='col-12 personal-info'>
-                        <h4>Personal Information</h4>
-                        <div>
-                            <h5>
-                                Email Address
-                            </h5>
-                            <p>
-                                <a href="mailto:avazque008@outlook.com">avazque008@outlook.com</a>
-                            </p>
-                        </div>
-                        <div>
-                            <h5>
-                                Phone Number
-                            </h5>
-                            <p>
-                                556.789.6723
-                            </p>
-                        </div>
+                        {errorMessage && (
+                            <div className='col-12'>
+                                <p className="error-text">{errorMessage}</p>
+                            </div>
+                        )}
+                        <button className='contact-btn' type="submit">Submit</button>
                     </div>
                 </form>
             </div>

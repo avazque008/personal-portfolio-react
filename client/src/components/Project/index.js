@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Modal from '../Modal';
 
 function Projects() {
 
@@ -74,8 +73,8 @@ function Projects() {
                                 <img className="project-img" src={project.image} alt={`A deployed web application titled ${project.name}.`} />
                             </div>
                         </a>
-                        <div id={`project-modal-${project.id}`} className="modal">
-                            <p className="project-description">{project.description}</p>
+                        <div id={`project-modal-${project.id}`} className="modal project-description">
+                            <p>{project.description}</p>
                             <a href={project.deploy} target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }} >Visit Website!</a>
                         </div>
                     </div>

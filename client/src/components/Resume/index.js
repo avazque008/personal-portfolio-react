@@ -11,9 +11,8 @@ function Resume() {
                 <div className="col-12 resume-title">
                     <h2>Skills</h2>
                 </div>
-                {/* <h6 className="col-12"><a href={require('../../assets/resume/Resume.pdf')} download>Download Resume</a></h6> */}
                 <div className="col-12 col-md-6 skills-1">
-                    <h4>Front-End Proficiencies</h4>
+                    <h4 style={{ textDecoration: 'underline'}}>Front-End Proficiencies</h4>
                     <ul>
                         {frontProficiencies.map((proficiency) => (
                             <li key={proficiency}>
@@ -23,7 +22,7 @@ function Resume() {
                     </ul>
                 </div>
                 <div className="col-12 col-md-6 skills-2">
-                    <h4>Back-End Proficiencies</h4>
+                    <h4 style={{ textDecoration: 'underline'}}>Back-End Proficiencies</h4>
                     <ul>
                         {backProficiencies.map((proficiency) => (
                             <li key={proficiency}>
