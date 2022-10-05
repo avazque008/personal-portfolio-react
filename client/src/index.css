@@ -135,7 +135,8 @@ body {
 
 .about-me,
 .project-info,
-.contact-form-div {
+.contact-form-div,
+.resume {
   color: #177095;
   padding: 20px;
   margin: 0px 10px;
@@ -152,7 +153,8 @@ body {
 }
 
 .about-title h2,
-.projects-title h2 {
+.projects-title h2,
+.resume-title h2 {
   animation: 1.1s ease-in-out 0s 1 slideInFromRight;
   border-bottom: 1px solid #177095;
   width: 80%;
@@ -298,21 +300,30 @@ body {
 }
 
 .resume ul {
-  display: inline-block;
   text-align: left;
-}
-
-.resume h2 {
-  margin: 25px 0;
-  text-decoration: underline;
 }
 
 .resume li {
   padding: 5px;
 }
 
-.resume div {
-  margin: 10px 0;
+.resume-title {
+  margin-bottom: 20px;
+}
+.skills-1,
+.skills-2 {
+  padding: 20px;
+}
+.skills-1 h4, .skills-2 h4 {
+  text-align: center;
+} 
+
+.skills-1 {
+  border-right: 1px solid #177095;
+}
+
+.skills-2 {
+  border-left: 1px solid #177095;
 }
 
 /* Resume End*/
@@ -356,6 +367,16 @@ body {
 
   .header {
     padding: 5px;
+  }
+
+  .skills-1 {
+    border-right: none;
+    border-bottom: 1px solid #177095;
+  }
+  
+  .skills-2 {
+    border-left: none;
+    border-top: 1px solid #177095;
   }
 
 }

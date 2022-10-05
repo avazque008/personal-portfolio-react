@@ -1,4 +1,5 @@
 import React from "react";
+import Resume from '../Resume';
 
 function About() {
     return (
@@ -22,6 +23,7 @@ function About() {
                     </div>
                 </div>
             </div>
+            < Resume />
         </div>
     );
 
