@@ -68,15 +68,16 @@ function Projects() {
                                 <i className="fa-brands fa-github"></i>
                             </a>
                         </h3>
-                        <a href={`#project-modal-${project.id}`} rel="noreferrer modal:open" style={{ textDecoration: 'none' }}>
+                        <a href={project.deploy} target='_blank' rel="noreferrer" style={{ textDecoration: 'none' }}>
+                        {/* <a href={`#project-modal-${project.id}`} rel="noreferrer modal:open" style={{ textDecoration: 'none' }}> */}
                             <div className="project-img-section">
                                 <img className="project-img" src={project.image} alt={`A deployed web application titled ${project.name}.`} />
                             </div>
                         </a>
-                        <div id={`project-modal-${project.id}`} className="modal">
+                        {/* <div id={`project-modal-${project.id}`} className="modal">
                             <p>{project.description}</p>
                             <a href={project.deploy} target="_blank" rel="noreferrer" className="project-link">Visit Website</a>
-                        </div>
+                        </div> */}
                     </div>
                 ))}
             </div>
