@@ -4,11 +4,11 @@ function Projects() {
 
     const [projects] = useState([
         {
-            name: 'Run Buddy',
-            image: require('../../assets/images/run-buddy.PNG'),
-            github: 'https://github.com/avazque008/run-buddy',
-            deploy: 'https://avazque008.github.io/run-buddy/',
-            description: '1',
+            name: 'Book and a Coffee',
+            image: require('../../assets/images/bookandacoffee.png'),
+            github: 'https://github.com/avazque008/bookandacoffee',
+            deploy: 'https://www.bookandacoffee.com/',
+            description: 'Book and a Coffee is a single-page MERN weblog where book enthusiasts can share their thoughts concerning a book they have read and keep track of books they plan to read or have already read.',
             id: 1
         },
         {
@@ -20,20 +20,12 @@ function Projects() {
             id: 2
         },
         {
-            name: 'My Lifestyle',
-            image: require('../../assets/images/my-lifestyle.PNG'),
-            github: 'https://github.com/avazque008/my-lifestyle',
-            deploy: 'https://avazque008.github.io/my-lifestyle/welcome.html',
-            description: '2',
+            name: 'Run Buddy',
+            image: require('../../assets/images/run-buddy.PNG'),
+            github: 'https://github.com/avazque008/run-buddy',
+            deploy: 'https://avazque008.github.io/run-buddy/',
+            description: 'Run Buddy is a static website that lets runners sign up for personal training.',
             id: 3
-        },
-        {
-            name: 'Password Generator',
-            image: require('../../assets/images/password-generator.PNG'),
-            github: 'https://github.com/avazque008/random-password-generator',
-            deploy: 'https://avazque008.github.io/random-password-generator/',
-            description: '3',
-            id: 4
         },
         {
             name: 'Tech Blog',
@@ -41,6 +33,14 @@ function Projects() {
             github: 'https://github.com/avazque008/technology-blog',
             deploy: 'https://av-tech-blog.herokuapp.com/',
             description: "Tech Blog is a full-stack web application, a CMS-style blog where developers can publish their blog posts and comment on other developers' posts.",
+            id: 4
+        },
+        {
+            name: 'Password Generator',
+            image: require('../../assets/images/password-generator.PNG'),
+            github: 'https://github.com/avazque008/random-password-generator',
+            deploy: 'https://avazque008.github.io/random-password-generator/',
+            description: 'Password Generator is a web application that generates random passwords based on criteria. Users can choose how many characters their password should have and what type of characters they want to include in their password. Users can decide on their password to include lowercase, uppercase, numbers, or special characters. By default, the password will be at least eight characters and no more than one hundred twenty-eight characters long.',
             id: 5
         },
         {
@@ -48,8 +48,16 @@ function Projects() {
             image: require('../../assets/images/work-day-scheduler.PNG'),
             github: 'https://github.com/avazque008/work-day-scheduler',
             deploy: 'https://avazque008.github.io/work-day-scheduler/',
-            description: '4',
+            description: 'Work Day Schedule is simple calendar application that allows a user to save events for each hour of the day.',
             id: 6
+        },
+        {
+            name: 'My Lifestyle',
+            image: require('../../assets/images/my-lifestyle.PNG'),
+            github: 'https://github.com/avazque008/my-lifestyle',
+            deploy: 'https://avazque008.github.io/my-lifestyle/welcome.html',
+            description: "My Lifestyle is a dynamic front-end website that helps a user's keep track of their way of life, from helping them plan for the day to broadcasting the weather.",
+            id: 7
         },
 
     ]);
@@ -68,16 +76,15 @@ function Projects() {
                                 <i className="fa-brands fa-github"></i>
                             </a>
                         </h3>
-                        <a href={project.deploy} target='_blank' rel="noreferrer" style={{ textDecoration: 'none' }}>
-                        {/* <a href={`#project-modal-${project.id}`} rel="noreferrer modal:open" style={{ textDecoration: 'none' }}> */}
+                        <a href={`#project-modal-${project.id}`} rel="noreferrer modal:open" style={{ textDecoration: 'none' }}>
                             <div className="project-img-section">
                                 <img className="project-img" src={project.image} alt={`A deployed web application titled ${project.name}.`} />
                             </div>
                         </a>
-                        {/* <div id={`project-modal-${project.id}`} className="modal">
+                        <div id={`project-modal-${project.id}`} className="modal">
                             <p>{project.description}</p>
                             <a href={project.deploy} target="_blank" rel="noreferrer" className="project-link">Visit Website</a>
-                        </div> */}
+                        </div>
                     </div>
                 ))}
             </div>
