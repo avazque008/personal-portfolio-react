@@ -73,9 +73,9 @@ function Projects() {
                                 <img className="project-img" src={project.image} alt={`A deployed web application titled ${project.name}.`} />
                             </div>
                         </a>
-                        <div id={`project-modal-${project.id}`} className="modal project-description">
+                        <div id={`project-modal-${project.id}`} className="modal">
                             <p>{project.description}</p>
-                            <a href={project.deploy} target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }} >Visit Website!</a>
+                            <a href={project.deploy} target="_blank" rel="noreferrer" className="project-link">Visit Website</a>
                         </div>
                     </div>
                 ))}
