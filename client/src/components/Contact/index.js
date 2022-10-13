@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { capitalizeFirstLetter, validateEmail } from '../../utils/helpers';
 
 function ContactForm() {
 
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
 
-    const { name, email, message } = formState;
-
     const [errorMessage, setErrorMessage] = useState('');
+
+    const { name, email, message } = formState;
 
     function handleChange(e) {
         if (e.target.name === 'email') {
@@ -31,16 +31,31 @@ function ContactForm() {
         }
     }
 
-    function handleSubmit(e) {
+    async function handleSubmit(e) {
         e.preventDefault();
-        console.log(formState);
+        try {
+            if (name && email && message) {
+                const mailResponse = await fetch('/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formState)
+                })
+
+                console.log(mailResponse.json());
+            }
+        }
+        catch (error) {
+            console.error(error);
+        }
     }
 
     return (
         <section className="contact-section">
             <div className='contact-form-div'>
                 <h2>Contact Me</h2>
-                <form id="contact-form" className='row' onSubmit={handleSubmit} >
+                <form id="contact-form" className='row'>
                     <div className='col-12 col-md-6 personal-info'>
                         <h4>Personal Information</h4>
                         <div>
@@ -87,7 +102,7 @@ function ContactForm() {
                                 <p className="error-text">{errorMessage}</p>
                             </div>
                         )}
-                        <button className='contact-btn' type="submit">Submit</button>
+                        <button className='contact-btn' type="submit" onClick={handleSubmit}>Submit</button>
                     </div>
                 </form>
             </div>
