@@ -1,8 +1,18 @@
 const express = require('express');
 const path = require('path');
-const { transporter, createMailOptions } = require('./utils/mail');
+const { createMailOptions } = require('./utils/mail');
 const PORT = process.env.PORT || 3001;
 const app = express();
+const nodemailer = require('nodemailer');
+require('dotenv').config();
+
+const transporter = nodemailer.createTransport({
+    service: 'hotmail',
+    auth: {
+        user: process.env.AUTH_MAIL,
+        pass: process.env.AUTH_PASS
+    }
+});
 
 
 app.use(express.urlencoded({ extended: false }));

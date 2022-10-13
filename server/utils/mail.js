@@ -1,13 +1,4 @@
 require('dotenv').config();
-const nodemailer = require('nodemailer');
-
-const transporter = nodemailer.createTransport({
-    service: 'hotmail',
-    auth: {
-        user: process.env.AUTH_MAIL,
-        pass: process.env.AUTH_PASS
-    }
-});
 
 function createMailOptions(name, email, message) {
     return {
@@ -19,4 +10,4 @@ function createMailOptions(name, email, message) {
     }
 };
 
-module.exports = { transporter, createMailOptions }
+module.exports = { createMailOptions }
