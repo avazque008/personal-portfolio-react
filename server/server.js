@@ -1,10 +1,10 @@
+require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const { createMailOptions } = require('./utils/mail');
 const PORT = process.env.PORT || 3001;
 const app = express();
 const nodemailer = require('nodemailer');
-require('dotenv').config();
 
 const transporter = nodemailer.createTransport({
     service: 'hotmail',
@@ -26,7 +26,7 @@ app.post('/contact', (req, res) => {
     const { name, email, message } = req.body;
 
     try {
-        transporter.sendMail(createMailOptions(name, email, message), (err, info) => {
+        transporter.sendMail(createMailOptions(name, email, message), (err) => {
             if (err) {
                 console.log(err);
             } else {
