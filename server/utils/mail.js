@@ -1,7 +1,6 @@
-require('dotenv').config();
-if (process.env.AUTH_MAIL && process.env.GMAIL && process.env.AUTH_PASS) {
-    console.log('Exist!');
-};
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config();
+}
 
 function createMailOptions(name, email, message) {
     return {
